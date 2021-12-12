@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<head>
+<h1 align="center" style="color:red;"><u>DISPLAYING STATUS</u></h1>
+
+<script type="text/javascript">
+function validateForm()
+{
+
+
+var a=document.forms["myForm"]["tno"].value;
+if (a===null || a==="")
+{
+alert("Ticket Number should be entered");
+document.myForm.age.focus();
+return false;
+}
+
+
+
+
+}
+
+</script>
+</head>
+
+<body style="background-color:lightsteelblue;">
+<form name="myForm" onsubmit="return validateForm()" action=centraldisplayservlet method="post">
+<table align="center">
+<tr><td> Ticket No:</td><td><input type="text" name="tno" /></br></td></tr>
+<tr>
+<td> <input type="Submit" value="process" name="s1"/></td>
+<td> <input type="Submit" value="End process" name="s1"/></td>
+
+</tr>
+</form>
+</body>
+

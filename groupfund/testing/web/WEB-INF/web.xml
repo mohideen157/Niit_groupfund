@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginServlet1</servlet-name>
+        <servlet-class>servlets.LoginServlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet3</servlet-name>
+        <servlet-class>servlets.LoginServlet3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet4</servlet-name>
+        <servlet-class>servlets.LoginServlet4</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>servlets.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>banksearchservlet</servlet-name>
+        <servlet-class>servlets.banksearchservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>banksearservnew</servlet-name>
+        <servlet-class>servlets.banksearservnew</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>genticketservlet</servlet-name>
+        <servlet-class>servlets.genticketservlet</servlet-class>
+    </servlet>
+   <servlet>
+        <servlet-name>userticketservlet</servlet-name>
+        <servlet-class>servlets.userticketservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>centraldisplayservlet</servlet-name>
+        <servlet-class>servlets.centraldisplayservlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>adminbankdetailsServlet</servlet-name>
+        <servlet-class>servlets.adminbankdetailsServlet</servlet-class>
+    </servlet>
+  <servlet>
+        <servlet-name>usersearchservlet</servlet-name>
+        <servlet-class>servlets.usersearchservlet</servlet-class>
+    </servlet>
+      
+<servlet>
+        <servlet-name>LoginServletn1</servlet-name>
+        <servlet-class>servlets.LoginServletn1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet1</servlet-name>
+        <url-pattern>/LoginServlet1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet3</servlet-name>
+        <url-pattern>/LoginServlet3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet4</servlet-name>
+        <url-pattern>/LoginServlet4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/RegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>banksearchservlet</servlet-name>
+        <url-pattern>/banksearchservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>banksearservnew</servlet-name>
+        <url-pattern>/banksearservnew</url-pattern>
+    </servlet-mapping>
+ <servlet-mapping>
+        <servlet-name>genticketservlet</servlet-name>
+        <url-pattern>/genticketservlet</url-pattern>
+    </servlet-mapping>   
+  
+<servlet-mapping>
+        <servlet-name>userticketservlet</servlet-name>
+        <url-pattern>/userticketservlet</url-pattern>
+    </servlet-mapping>   
+<servlet-mapping>
+        <servlet-name>centraldisplayservlet</servlet-name>
+        <url-pattern>/centraldisplayservlet</url-pattern>
+    </servlet-mapping>  
+     
+<servlet-mapping>
+        <servlet-name>adminbankdetailsServlet</servlet-name>
+        <url-pattern>/adminbankdetailsServlet</url-pattern>
+    </servlet-mapping>   
+    
+<servlet-mapping>
+        <servlet-name>usersearchservlet</servlet-name>
+        <url-pattern>/usersearchservlet</url-pattern>
+    </servlet-mapping>    
+    
+<servlet-mapping>
+        <servlet-name>LoginServletn1</servlet-name>
+        <url-pattern>/LoginServletn1</url-pattern>
+    </servlet-mapping>     
+  
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

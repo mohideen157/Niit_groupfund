@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<head>
+<h1 align="center" style="color:red;"><u> USER DETAILS </u></h1>
+
+<script type="text/javascript">
+function validateForm()
+{
+var p=document.forms["myForm"]["id"].value;
+if (p===null || p==="")
+{
+alert("Id must be filled out");
+document.myForm.id.focus();
+return false;
+}
+var x=document.forms["myForm"]["firstname"].value;
+if (x===null || x==="")
+{
+alert("First name must be filled out");
+document.myForm.firstname.focus();
+return false;
+}
+
+var y=document.forms["myForm"]["fathersname"].value;
+if (y===null || y==="")
+{
+alert("Fathers name must be filled out");
+document.myForm.fathersname.focus();
+return false;
+}
+var a=document.forms["myForm"]["age"].value;
+if (a===null || a==="")
+{
+alert("age must be filled out");
+document.myForm.age.focus();
+return false;
+}
+
+var c=document.forms["myForm"]["email"].value;
+var atpos=c.indexOf("@");
+var dotpos=c.lastIndexOf(".");
+
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=c.length)
+{
+alert("Not a valid e-mail address");
+document.myForm.email.focus();
+return false;
+}
+
+var d=document.forms["myForm"]["phonenum"].value;
+if (d===null || d==="")
+{
+alert("phone number must be filled out");
+document.myForm.phonenum.focus();
+return false;
+}
+var f=document.forms["myForm"]["account"].value;
+if (f===null || f==="")
+{
+alert("Account Type must be Selected");
+document.myForm.qualification.focus();
+return false;
+}
+}
+
+</script>
+</head>
+
+<body style="background-color:lightsteelblue;">
+<form name="myForm" onsubmit="return validateForm()" action=RegistrationServlet method="post">
+<table align="center">
+<tr><td> UserId:</td><td><input type="text" name="id" /><br /></td></tr>
+<tr><td> First name:</td><td><input type="text" name="firstname" /><br /></td></tr>
+<tr><td> Fathersname:</td><td> <input type="text" name="fathersname" /><br/></td></tr>
+<tr><td> Age:</td><td><input type="text" name="age" /></br></td></tr>
+
+<tr><td> Gender:</td><td></br>
+<input type="radio" name="sex" value="male" /> Male<br />
+<input type="radio" name="sex" value="female" /> Female</br></td></tr>
+<tr><td> EmailId:</td><td><input type="text" name="email"/><br /></td></tr>
+<tr><td>
+Phone Number:</td><td><input type="text" name="phonenum"/><br /></td></tr>
+<tr><td> Account Type</td><td> <select name="account"/>
+<option value="SavingAcc">SavingsAcc</option>
+<option value="CurrentAcc">CurrentAcc</option>
+<option value="FD">FD</option>
+<option value="Other">Other</option>
+</select></br></td></tr>
+<tr><td> UserName:</td><td><input type="text" name="uname" /><br /></td></tr>
+<tr><td> Password:</td><td><input type="password" name="pass" /><br /></td></tr>
+<tr><td> Confirm Password:</td><td><input type="password" name="cpass" /><br /></td></tr>
+<tr>
+<td> <input type="Submit" value="insert" name="s1"></td>
+<td> <input type="Submit" value="update" name="s1"></td>
+<td> <input type="Submit" value="delete" name="s1"> </td>
+<td><input type="reset" value="reset" /></td>
+</tr>
+</form>
+</body>
+
